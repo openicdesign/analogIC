@@ -387,11 +387,8 @@ def post(filename,root,date):
     options["jekyll"] = root
     options["dir"] = os.path.dirname(filename)
 
-    if(not os.path.exists("docs/assets/media/")):
-        os.mkdir("docs/assets/media/")
-
-    if(not os.path.exists("docs/_posts")):
-        os.mkdir("docs/_posts")
+    os.makedirs("docs/assets/media/", exist_ok=True)
+    os.makedirs("docs/_posts", exist_ok=True)
 
     #- Post
     l = Lecture(filename,options=options)
