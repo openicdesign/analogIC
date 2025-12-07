@@ -6,6 +6,7 @@ import click
 from sys import platform
 import shutil
 import urllib.parse
+import subprocess
 
 class Image():
 
@@ -101,8 +102,8 @@ class Lecture():
         with open("images.txt","a") as fo:
             for image in self.images:
                 if(not image.skip and not image.isUrl):
-                    fo.write(image.orgsrc + "\n")
-                    fo.write(image.src +"\n")
+                    fo.write(image.orgsrc.strip() + "\n")
+                    fo.write(image.src.strip() +"\n")
                 image.copy()
 
 
@@ -300,7 +301,7 @@ class Presentation(Lecture):
 title: {self.title}
 output:
   slidy_presentation:
-    footer: "Copyright (c) 2024, Carsten Wulff"
+    footer: "Copyright (c) 2025, ASICedu.com"
     fig_width: 800
 ---
 
@@ -360,8 +361,15 @@ class Latex(Lecture):
             ss += l
         return ss
 
-
-    
+def _pandoc_bin():
+    """
+    Locate pandoc executable, honoring PANDOC_BIN/PANDOC env vars.
+    """
+    for var in ("PANDOC_BIN", "PANDOC"):
+        candidate = os.environ.get(var)
+        if candidate:
+            return candidate
+    return shutil.which("pandoc")
 
 @click.group()
 def cli():
@@ -372,7 +380,7 @@ def cli():
 
 @cli.command()
 @click.argument("filename")
-@click.option("--root",default="/aic2024/",help="Root of jekyll site")
+@click.option("--root",default="/analogIC/",help="Root of jekyll site")
 @click.option("--date",default=None,help="Date to use")
 def post(filename,root,date):
     options = dict()
@@ -419,8 +427,28 @@ def latex(filename,root):
         fo.write(str(p))
 
     flatex = fname.replace(".md",".latex")
-    cmd = f"pandoc --citeproc --bibliography=pdf/analogic.bib --csl=pdf/ieee-with-url.csl  -o {flatex} {fname}  "
-    os.system(cmd)
+    pandoc_bin = _pandoc_bin()
+    if pandoc_bin is None:
+        raise RuntimeError(
+            "Pandoc is required for latex generation; set PANDOC_BIN (e.g. to C:\\path\\to\\pandoc.exe) or add pandoc to PATH."
+        )
+    cmd = [
+        pandoc_bin,
+        "--citeproc",
+        "--bibliography=pdf/analogic.bib",
+        "--csl=pdf/ieee-with-url.csl",
+        "-o",
+        flatex,
+        fname,
+    ]
+    try:
+        subprocess.run(cmd, check=True)
+    except FileNotFoundError as exc:
+        raise RuntimeError(
+            "pandoc is required for latex generation; please install it and ensure it is on PATH."
+        ) from exc
+    except subprocess.CalledProcessError as exc:
+        raise RuntimeError(f"pandoc failed while converting {fname}") from exc
 
 
 

@@ -3,18 +3,67 @@
 import re
 import sys
 import os
+import shutil
+import subprocess
 fname = sys.argv[1]
 
 
-def imgConvert(ftype,fotype,path):
+def _magick():
+    """
+    Locate ImageMagick executable. Prefer IMAGEMAGICK_BIN env, then magick, then convert.
+    """
+    candidates = []
+    env_bin = os.environ.get("IMAGEMAGICK_BIN")
+    if env_bin:
+        candidates.append(env_bin)
+    candidates.append("magick")
+    # Look for default Windows installation if not on PATH
+    search_roots = [
+        os.environ.get("PROGRAMFILES"),
+        os.environ.get("PROGRAMFILES(X86)"),
+        os.environ.get("IMAGEMAGICK_HOME"),
+        r"C:\Software",
+    ]
+    for base in search_roots:
+        if not base or not os.path.isdir(base):
+            continue
+        for entry in os.listdir(base):
+            if entry.lower().startswith("imagemagick"):
+                candidates.append(os.path.join(base, entry, "magick.exe"))
+    candidates.append("convert")
+    for cmd in candidates:
+        if os.path.basename(cmd) == cmd:
+            exe = shutil.which(cmd)
+        else:
+            exe = cmd if os.path.exists(cmd) else None
+        if exe:
+            return exe
+    return None
+
+MAGICK_BIN = _magick()
+
+def imgConvert(ftype,fotype,path,required=True):
     fopath = "media/"+ os.path.basename(path).replace(ftype,fotype)
-    if(not os.path.exists(fopath)):
-        os.system(f"convert -density 100 {path} {fopath}")
+    if os.path.exists(fopath):
+        return fopath
+    if MAGICK_BIN is None:
+        raise RuntimeError(
+            "ImageMagick (magick/convert) not found; install it or set IMAGEMAGICK_BIN."
+        )
+    cmd = [MAGICK_BIN, "-density", "100", path, fopath]
+    try:
+        subprocess.run(cmd, check=True)
+    except subprocess.CalledProcessError as exc:
+        if required:
+            raise RuntimeError(f"Image conversion failed for {path}") from exc
+        print(f"Warning: unable to convert {path} -> {fopath}, using original file")
+        return path
     return fopath
 
 
 def toPng(ftype,path):
-    return imgConvert(ftype,".png",path)
+    required = ftype.lower() != ".pdf"
+    return imgConvert(ftype,".png",path,required=required)
 
 def toPdf(ftype,path):
     return imgConvert(ftype,".pdf",path)

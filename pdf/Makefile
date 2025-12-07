@@ -5,35 +5,45 @@ FILE=analogic
 
 TEXS = ${shell ls -1 *.latex}
 
-PYTHON=python3
-ifneq ($(wildcard /pyenv/bin/.*),)
-	PYTHON=/pyenv/bin/python3
+PYTHON := $(shell if [ -x ../venv/bin/python ]; then printf "../venv/bin/python"; \
+	elif command -v python3 >/dev/null 2>&1; then command -v python3; \
+	elif command -v python >/dev/null 2>&1; then command -v python; \
+	else printf "python3"; fi)
+
+#- Ensure TEXINPUTS works on both Unix (:) and Windows (;)
+ifeq ($(OS),Windows_NT)
+  TEXINPUTS_DELIM := ;
+else
+  TEXINPUTS_DELIM := :
 endif
+export TEXINPUTS := .$(TEXINPUTS_DELIM)kaobook$(TEXINPUTS_DELIM)
 
 kaobook:
 	git clone https://github.com/fmarotta/kaobook.git
 
 fix:
-	${foreach f, ${TEXS}, ${PYTHON} fix_svg.py ${f};}
+	${foreach f, ${TEXS}, "${PYTHON}" fix_svg.py ${f};}
 
 hash:
-	echo '{\\noindent ${VERSION_DATE}} \\\\ \n {\\noindent from ${VERSION_HASH}}'  > version.tex
+	printf '%s %s %s\n%s %s %s\n' '\noindent' "${VERSION_DATE}" '\\\\' '\noindent' 'from' "${VERSION_HASH}" > version.tex
 
 #- Choose right pandoc file based on pandoc version
-PANDOC=pandoc_$(shell pandoc --version|head -n 1|cut -d " " -f 2|cut -d "." -f "1,2").tex
+PANDOC_BIN ?= pandoc
+PANDOC_VERSION := $(shell "$(PANDOC_BIN)" --version | head -n 1 | cut -d " " -f 2 | cut -d "." -f "1,2")
+PANDOC_TMPL := $(firstword $(wildcard pandoc_${PANDOC_VERSION}.tex pandoc_3.4.tex pandoc_3.1.tex))
 pandoc.tex:
-	cp ${PANDOC} pandoc.tex
+	cp ${PANDOC_TMPL} pandoc.tex
 
 
 one: fix hash kaobook pandoc.tex
 	export
 	chmod -R 755  media
-	TEXINPUTS=".:kaobook:" pdflatex ${FILE}
+	pdflatex ${FILE}
 	#TEXINPUTS=".:kaobook:" makeindex ${FILE}.nlo
 	#-pdflatex -interaction nonstopmode --shell-escape ${FILE}.latex
-	-TEXINPUTS=".:kaobook:" bibtex ${FILE}
-	TEXINPUTS=".:kaobook:" pdflatex ${FILE}
-	TEXINPUTS=".:kaobook:" pdflatex ${FILE}
+	-bibtex ${FILE}
+	pdflatex ${FILE}
+	pdflatex ${FILE}
 	#TEXINPUTS=".:kaobook:" pdflatex ${FILE}.tex
 	#-pdflatex -interaction nonstopmode --shell-escape ${FILE}.latex
 

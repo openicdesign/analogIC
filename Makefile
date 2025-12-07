@@ -5,10 +5,12 @@ TAG=1
 YEAR=2025
 
 #-
-PYTHON=python3
-ifneq ($(wildcard /pyenv/bin/.*),)
-	PYTHON=/pyenv/bin/python3
-endif
+PYTHON := $(shell if [ -x venv/bin/python ]; then printf "venv/bin/python"; \
+	elif command -v python3 >/dev/null 2>&1; then command -v python3; \
+	elif command -v python >/dev/null 2>&1; then command -v python; \
+	else printf "python3"; fi)
+PANDOC_BIN ?= pandoc
+export PANDOC_BIN
 
 .PHONY:  slides
 
@@ -38,8 +40,8 @@ posts:
 	-rm images.txt
 	cp syllabus.md docs/syllabus.md
 	cp plan.md docs/plan.md
-	${foreach f, ${FILES}, ${PYTHON} py/lecture.py post lectures/${f}.md || exit; }
-	cd lectures; cat ../images.txt |xargs git add -f
+	${foreach f, ${FILES}, "${PYTHON}" py/lecture.py post lectures/${f}.md || exit; }
+	cd lectures; while IFS= read -r path; do git add -f "$$path"; done < ../images.txt
 
 
 jstart:
@@ -47,8 +49,8 @@ jstart:
 
 latex:
 	-mkdir pdf/media
-	${PYTHON} py/lecture.py latex lectures/tex_intro.md
-	${foreach f, ${FILES}, ${PYTHON} py/lecture.py latex lectures/${f}.md || exit ; }
+	"${PYTHON}" py/lecture.py latex lectures/tex_intro.md
+	${foreach f, ${FILES}, "${PYTHON}" py/lecture.py latex lectures/${f}.md || exit ; }
 	cd pdf; make one
 	cp pdf/analogic.pdf docs/assets/
 
