@@ -6,7 +6,9 @@ import click
 from sys import platform
 import shutil
 import urllib.parse
+import urllib.request
 import subprocess
+import tempfile
 
 class Image():
 
@@ -36,9 +38,20 @@ class Image():
 
         if(self.isUrl and "downloadImage" in self.options):
             url = self.src
-            self.src = "/tmp/" +  urllib.parse.unquote(os.path.basename(self.src))
+            tmp_dir = tempfile.gettempdir()
+            os.makedirs(tmp_dir, exist_ok=True)
+            local_name = urllib.parse.unquote(os.path.basename(self.src))
+            self.src = os.path.join(tmp_dir, local_name)
             if(not os.path.exists(self.src)):
-                os.system(f"cd /tmp/; wget {url}")
+                try:
+                    req = urllib.request.Request(
+                        url,
+                        headers={"User-Agent": "analogic-bot/1.0 (+https://github.com/openicdesign/analogIC)"},
+                    )
+                    with urllib.request.urlopen(req) as response, open(self.src, "wb") as outf:
+                        shutil.copyfileobj(response, outf)
+                except Exception as exc:
+                    raise RuntimeError(f"Unable to download image {url}") from exc
 
 
         self.filesrc = os.path.basename(self.src)
@@ -99,7 +112,7 @@ class Lecture():
         self._read()
 
     def copyAssets(self):
-        with open("images.txt","a") as fo:
+        with open("images.txt","a", encoding="utf-8") as fo:
             for image in self.images:
                 if(not image.skip and not image.isUrl):
                     fo.write(image.orgsrc.strip() + "\n")
@@ -115,7 +128,7 @@ class Lecture():
         self.skipslide = False
         self.removeComment = False
 
-        with open(self.filename) as fi:
+        with open(self.filename, encoding="utf-8") as fi:
             for line in fi:
 
                 if(first and "date:" in line):
@@ -263,7 +276,7 @@ class Presentation(Lecture):
         self.skipslide = False
         self.removeComment = False
 
-        with open(self.filename) as fi:
+        with open(self.filename, encoding="utf-8") as fi:
             for line in fi:
 
                 if(first and re.search(r"^\s*$",line)):
@@ -401,7 +414,7 @@ def post(filename,root,date):
     l.copyAssets()
     fname = "docs/_posts/" + date +"-"+ l.title.strip().replace(" ","-") + ".markdown"
 
-    with open(fname,"w") as fo:
+    with open(fname,"w", encoding="utf-8") as fo:
         fo.write(str(l))
     
 
@@ -420,7 +433,7 @@ def latex(filename,root):
 
 
     fname = root + os.path.sep + p.title.strip().replace(" ","_").lower() + ".md"
-    with open(fname,"w") as fo:
+    with open(fname,"w", encoding="utf-8") as fo:
         fo.write(str(p))
 
     flatex = fname.replace(".md",".latex")

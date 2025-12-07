@@ -72,122 +72,262 @@
 \etoc@startlocaltoc {7}
 \contentsline {section}{\numberline {4.1}There are standard units of measurement}{23}{section.4.1}%
 \contentsline {mtocsection}{\numberline {4.1}There are standard units of measurement}{23}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Electrons}{23}{section.4.2}%
-\contentsline {mtocsection}{\numberline {4.2}Electrons}{23}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Probability}{24}{section.4.3}%
-\contentsline {mtocsection}{\numberline {4.3}Probability}{24}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Uncertainty principle}{25}{section.4.4}%
-\contentsline {mtocsection}{\numberline {4.4}Uncertainty principle}{25}{section.4.4}%
-\contentsline {section}{\numberline {4.5}States as a function of time and space}{25}{section.4.5}%
-\contentsline {mtocsection}{\numberline {4.5}States as a function of time and space}{25}{section.4.5}%
-\contentsline {section}{\numberline {4.6}Allowed energy levels in atoms}{26}{section.4.6}%
-\contentsline {mtocsection}{\numberline {4.6}Allowed energy levels in atoms}{26}{section.4.6}%
-\contentsline {section}{\numberline {4.7}Allowed energy levels in solids}{26}{section.4.7}%
-\contentsline {mtocsection}{\numberline {4.7}Allowed energy levels in solids}{26}{section.4.7}%
-\contentsline {section}{\numberline {4.8}Silicon Unit Cell}{27}{section.4.8}%
-\contentsline {mtocsection}{\numberline {4.8}Silicon Unit Cell}{27}{section.4.8}%
-\contentsline {section}{\numberline {4.9}Band structure}{27}{section.4.9}%
-\contentsline {mtocsection}{\numberline {4.9}Band structure}{27}{section.4.9}%
-\contentsline {section}{\numberline {4.10}Valence band and Conduction band}{27}{section.4.10}%
-\contentsline {mtocsection}{\numberline {4.10}Valence band and Conduction band}{27}{section.4.10}%
-\contentsline {section}{\numberline {4.11}Fermi level}{28}{section.4.11}%
-\contentsline {mtocsection}{\numberline {4.11}Fermi level}{28}{section.4.11}%
-\contentsline {section}{\numberline {4.12}Metals}{28}{section.4.12}%
-\contentsline {mtocsection}{\numberline {4.12}Metals}{28}{section.4.12}%
-\contentsline {section}{\numberline {4.13}Insulators}{29}{section.4.13}%
-\contentsline {mtocsection}{\numberline {4.13}Insulators}{29}{section.4.13}%
-\contentsline {section}{\numberline {4.14}Semiconductors}{29}{section.4.14}%
-\contentsline {mtocsection}{\numberline {4.14}Semiconductors}{29}{section.4.14}%
-\contentsline {section}{\numberline {4.15}Band diagrams}{29}{section.4.15}%
-\contentsline {mtocsection}{\numberline {4.15}Band diagrams}{29}{section.4.15}%
-\contentsline {section}{\numberline {4.16}Density of electrons/holes}{30}{section.4.16}%
-\contentsline {mtocsection}{\numberline {4.16}Density of electrons/holes}{30}{section.4.16}%
-\contentsline {section}{\numberline {4.17}Fields}{30}{section.4.17}%
-\contentsline {mtocsection}{\numberline {4.17}Fields}{30}{section.4.17}%
-\contentsline {section}{\numberline {4.18}Voltage}{31}{section.4.18}%
-\contentsline {mtocsection}{\numberline {4.18}Voltage}{31}{section.4.18}%
-\contentsline {section}{\numberline {4.19}Current}{31}{section.4.19}%
-\contentsline {mtocsection}{\numberline {4.19}Current}{31}{section.4.19}%
-\contentsline {section}{\numberline {4.20}Drift current}{32}{section.4.20}%
-\contentsline {mtocsection}{\numberline {4.20}Drift current}{32}{section.4.20}%
-\contentsline {section}{\numberline {4.21}Diffusion current}{33}{section.4.21}%
-\contentsline {mtocsection}{\numberline {4.21}Diffusion current}{33}{section.4.21}%
-\contentsline {section}{\numberline {4.22}Why are there two currents?}{33}{section.4.22}%
-\contentsline {mtocsection}{\numberline {4.22}Why are there two currents?}{33}{section.4.22}%
-\contentsline {section}{\numberline {4.23}Currents in a semiconductor}{33}{section.4.23}%
-\contentsline {mtocsection}{\numberline {4.23}Currents in a semiconductor}{33}{section.4.23}%
-\contentsline {section}{\numberline {4.24}Resistors}{34}{section.4.24}%
-\contentsline {mtocsection}{\numberline {4.24}Resistors}{34}{section.4.24}%
-\contentsline {section}{\numberline {4.25}Capacitors}{34}{section.4.25}%
-\contentsline {mtocsection}{\numberline {4.25}Capacitors}{34}{section.4.25}%
-\contentsline {section}{\numberline {4.26}Inductors}{34}{section.4.26}%
-\contentsline {mtocsection}{\numberline {4.26}Inductors}{34}{section.4.26}%
-\contentsline {chapter}{\numberline {5}Diodes}{35}{chapter.5}%
+\contentsline {section}{\numberline {4.2}Electrons}{24}{section.4.2}%
+\contentsline {mtocsection}{\numberline {4.2}Electrons}{24}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Probability}{25}{section.4.3}%
+\contentsline {mtocsection}{\numberline {4.3}Probability}{25}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Uncertainty principle}{26}{section.4.4}%
+\contentsline {mtocsection}{\numberline {4.4}Uncertainty principle}{26}{section.4.4}%
+\contentsline {section}{\numberline {4.5}States as a function of time and space}{26}{section.4.5}%
+\contentsline {mtocsection}{\numberline {4.5}States as a function of time and space}{26}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Allowed energy levels in atoms}{27}{section.4.6}%
+\contentsline {mtocsection}{\numberline {4.6}Allowed energy levels in atoms}{27}{section.4.6}%
+\contentsline {section}{\numberline {4.7}Allowed energy levels in solids}{27}{section.4.7}%
+\contentsline {mtocsection}{\numberline {4.7}Allowed energy levels in solids}{27}{section.4.7}%
+\contentsline {section}{\numberline {4.8}Silicon Unit Cell}{28}{section.4.8}%
+\contentsline {mtocsection}{\numberline {4.8}Silicon Unit Cell}{28}{section.4.8}%
+\contentsline {section}{\numberline {4.9}Band structure}{29}{section.4.9}%
+\contentsline {mtocsection}{\numberline {4.9}Band structure}{29}{section.4.9}%
+\contentsline {section}{\numberline {4.10}Valence band and Conduction band}{30}{section.4.10}%
+\contentsline {mtocsection}{\numberline {4.10}Valence band and Conduction band}{30}{section.4.10}%
+\contentsline {section}{\numberline {4.11}Fermi level}{30}{section.4.11}%
+\contentsline {mtocsection}{\numberline {4.11}Fermi level}{30}{section.4.11}%
+\contentsline {section}{\numberline {4.12}Metals}{31}{section.4.12}%
+\contentsline {mtocsection}{\numberline {4.12}Metals}{31}{section.4.12}%
+\contentsline {section}{\numberline {4.13}Insulators}{31}{section.4.13}%
+\contentsline {mtocsection}{\numberline {4.13}Insulators}{31}{section.4.13}%
+\contentsline {section}{\numberline {4.14}Semiconductors}{32}{section.4.14}%
+\contentsline {mtocsection}{\numberline {4.14}Semiconductors}{32}{section.4.14}%
+\contentsline {section}{\numberline {4.15}Band diagrams}{32}{section.4.15}%
+\contentsline {mtocsection}{\numberline {4.15}Band diagrams}{32}{section.4.15}%
+\contentsline {section}{\numberline {4.16}Density of electrons/holes}{32}{section.4.16}%
+\contentsline {mtocsection}{\numberline {4.16}Density of electrons/holes}{32}{section.4.16}%
+\contentsline {section}{\numberline {4.17}Fields}{33}{section.4.17}%
+\contentsline {mtocsection}{\numberline {4.17}Fields}{33}{section.4.17}%
+\contentsline {section}{\numberline {4.18}Voltage}{34}{section.4.18}%
+\contentsline {mtocsection}{\numberline {4.18}Voltage}{34}{section.4.18}%
+\contentsline {section}{\numberline {4.19}Current}{34}{section.4.19}%
+\contentsline {mtocsection}{\numberline {4.19}Current}{34}{section.4.19}%
+\contentsline {section}{\numberline {4.20}Drift current}{34}{section.4.20}%
+\contentsline {mtocsection}{\numberline {4.20}Drift current}{34}{section.4.20}%
+\contentsline {section}{\numberline {4.21}Diffusion current}{36}{section.4.21}%
+\contentsline {mtocsection}{\numberline {4.21}Diffusion current}{36}{section.4.21}%
+\contentsline {section}{\numberline {4.22}Why are there two currents?}{36}{section.4.22}%
+\contentsline {mtocsection}{\numberline {4.22}Why are there two currents?}{36}{section.4.22}%
+\contentsline {section}{\numberline {4.23}Currents in a semiconductor}{36}{section.4.23}%
+\contentsline {mtocsection}{\numberline {4.23}Currents in a semiconductor}{36}{section.4.23}%
+\contentsline {section}{\numberline {4.24}Resistors}{37}{section.4.24}%
+\contentsline {mtocsection}{\numberline {4.24}Resistors}{37}{section.4.24}%
+\contentsline {section}{\numberline {4.25}Capacitors}{37}{section.4.25}%
+\contentsline {mtocsection}{\numberline {4.25}Capacitors}{37}{section.4.25}%
+\contentsline {section}{\numberline {4.26}Inductors}{37}{section.4.26}%
+\contentsline {mtocsection}{\numberline {4.26}Inductors}{37}{section.4.26}%
+\contentsline {chapter}{\numberline {5}Diodes}{39}{chapter.5}%
 \etoc@startlocaltoc {8}
 \etoc@startlocaltoc {9}
-\contentsline {section}{\numberline {5.1}Why}{35}{section.5.1}%
-\contentsline {mtocsection}{\numberline {5.1}Why}{35}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Silicon}{35}{section.5.2}%
-\contentsline {mtocsection}{\numberline {5.2}Silicon}{35}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Intrinsic carrier concentration}{37}{section.5.3}%
-\contentsline {mtocsection}{\numberline {5.3}Intrinsic carrier concentration}{37}{section.5.3}%
-\contentsline {section}{\numberline {5.4}It's all quantum}{38}{section.5.4}%
-\contentsline {mtocsection}{\numberline {5.4}It's all quantum}{38}{section.5.4}%
-\contentsline {subsection}{\numberline {5.4.1}Density of states}{40}{subsection.5.4.1}%
-\contentsline {mtocsubsection}{\numberline {5.4.1}Density of states}{40}{subsection.5.4.1}%
-\contentsline {subsection}{\numberline {5.4.2}How to think about electrons (and holes)}{42}{subsection.5.4.2}%
-\contentsline {mtocsubsection}{\numberline {5.4.2}How to think about electrons (and holes)}{42}{subsection.5.4.2}%
-\contentsline {section}{\numberline {5.5}Doping}{43}{section.5.5}%
-\contentsline {mtocsection}{\numberline {5.5}Doping}{43}{section.5.5}%
-\contentsline {section}{\numberline {5.6}PN junctions}{44}{section.5.6}%
-\contentsline {mtocsection}{\numberline {5.6}PN junctions}{44}{section.5.6}%
-\contentsline {subsection}{\numberline {5.6.1}Built-in voltage}{44}{subsection.5.6.1}%
-\contentsline {mtocsubsection}{\numberline {5.6.1}Built-in voltage}{44}{subsection.5.6.1}%
-\contentsline {subsection}{\numberline {5.6.2}Current}{45}{subsection.5.6.2}%
-\contentsline {mtocsubsection}{\numberline {5.6.2}Current}{45}{subsection.5.6.2}%
-\contentsline {subsection}{\numberline {5.6.3}Forward voltage temperature dependence}{47}{subsection.5.6.3}%
-\contentsline {mtocsubsection}{\numberline {5.6.3}Forward voltage temperature dependence}{47}{subsection.5.6.3}%
-\contentsline {subsection}{\numberline {5.6.4}Current proportional to temperature}{49}{subsection.5.6.4}%
-\contentsline {mtocsubsection}{\numberline {5.6.4}Current proportional to temperature}{49}{subsection.5.6.4}%
-\contentsline {section}{\numberline {5.7}Equations aren't real}{50}{section.5.7}%
-\contentsline {mtocsection}{\numberline {5.7}Equations aren't real}{50}{section.5.7}%
-\contentsline {subsection}{References}{51}{section*.2}%
-\contentsline {chapter}{\numberline {6}Mosfets}{53}{chapter.6}%
+\contentsline {section}{\numberline {5.1}Why}{39}{section.5.1}%
+\contentsline {mtocsection}{\numberline {5.1}Why}{39}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Silicon}{39}{section.5.2}%
+\contentsline {mtocsection}{\numberline {5.2}Silicon}{39}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Intrinsic carrier concentration}{41}{section.5.3}%
+\contentsline {mtocsection}{\numberline {5.3}Intrinsic carrier concentration}{41}{section.5.3}%
+\contentsline {section}{\numberline {5.4}It's all quantum}{42}{section.5.4}%
+\contentsline {mtocsection}{\numberline {5.4}It's all quantum}{42}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}Density of states}{44}{subsection.5.4.1}%
+\contentsline {mtocsubsection}{\numberline {5.4.1}Density of states}{44}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.4.2}How to think about electrons (and holes)}{46}{subsection.5.4.2}%
+\contentsline {mtocsubsection}{\numberline {5.4.2}How to think about electrons (and holes)}{46}{subsection.5.4.2}%
+\contentsline {section}{\numberline {5.5}Doping}{47}{section.5.5}%
+\contentsline {mtocsection}{\numberline {5.5}Doping}{47}{section.5.5}%
+\contentsline {section}{\numberline {5.6}PN junctions}{48}{section.5.6}%
+\contentsline {mtocsection}{\numberline {5.6}PN junctions}{48}{section.5.6}%
+\contentsline {subsection}{\numberline {5.6.1}Built-in voltage}{48}{subsection.5.6.1}%
+\contentsline {mtocsubsection}{\numberline {5.6.1}Built-in voltage}{48}{subsection.5.6.1}%
+\contentsline {subsection}{\numberline {5.6.2}Current}{49}{subsection.5.6.2}%
+\contentsline {mtocsubsection}{\numberline {5.6.2}Current}{49}{subsection.5.6.2}%
+\contentsline {subsection}{\numberline {5.6.3}Forward voltage temperature dependence}{51}{subsection.5.6.3}%
+\contentsline {mtocsubsection}{\numberline {5.6.3}Forward voltage temperature dependence}{51}{subsection.5.6.3}%
+\contentsline {subsection}{\numberline {5.6.4}Current proportional to temperature}{53}{subsection.5.6.4}%
+\contentsline {mtocsubsection}{\numberline {5.6.4}Current proportional to temperature}{53}{subsection.5.6.4}%
+\contentsline {section}{\numberline {5.7}Equations aren't real}{54}{section.5.7}%
+\contentsline {mtocsection}{\numberline {5.7}Equations aren't real}{54}{section.5.7}%
+\contentsline {subsection}{References}{55}{section*.2}%
+\contentsline {chapter}{\numberline {6}Mosfets}{57}{chapter.6}%
 \etoc@startlocaltoc {10}
 \etoc@startlocaltoc {11}
-\contentsline {chapter}{\numberline {7}Spice}{55}{chapter.7}%
+\contentsline {chapter}{\numberline {7}Spice}{59}{chapter.7}%
 \etoc@startlocaltoc {12}
 \etoc@startlocaltoc {13}
-\contentsline {chapter}{\numberline {8}ESD and IC}{57}{chapter.8}%
+\contentsline {chapter}{\numberline {8}ESD and IC}{61}{chapter.8}%
 \etoc@startlocaltoc {14}
 \etoc@startlocaltoc {15}
-\contentsline {chapter}{\numberline {9}References and bias}{59}{chapter.9}%
+\contentsline {chapter}{\numberline {9}References and bias}{63}{chapter.9}%
 \etoc@startlocaltoc {16}
 \etoc@startlocaltoc {17}
-\contentsline {chapter}{\numberline {10}Analog frontend and filter}{61}{chapter.10}%
+\contentsline {chapter}{\numberline {10}Analog frontend and filter}{65}{chapter.10}%
 \etoc@startlocaltoc {18}
 \etoc@startlocaltoc {19}
-\contentsline {chapter}{\numberline {11}Switched capacitor circuits}{63}{chapter.11}%
+\contentsline {chapter}{\numberline {11}Switched capacitor circuits}{67}{chapter.11}%
 \etoc@startlocaltoc {20}
 \etoc@startlocaltoc {21}
-\contentsline {chapter}{\numberline {12}Oversampling and Sigma-Delta ADCs}{65}{chapter.12}%
+\contentsline {section}{\numberline {11.1}Active-RC}{67}{section.11.1}%
+\contentsline {mtocsection}{\numberline {11.1}Active-RC}{67}{section.11.1}%
+\contentsline {section}{\numberline {11.2}Gm-C}{69}{section.11.2}%
+\contentsline {mtocsection}{\numberline {11.2}Gm-C}{69}{section.11.2}%
+\contentsline {section}{\numberline {11.3}Switched capacitor}{69}{section.11.3}%
+\contentsline {mtocsection}{\numberline {11.3}Switched capacitor}{69}{section.11.3}%
+\contentsline {subsection}{\numberline {11.3.1}An example SC circuit}{72}{subsection.11.3.1}%
+\contentsline {mtocsubsection}{\numberline {11.3.1}An example SC circuit}{72}{subsection.11.3.1}%
+\contentsline {section}{\numberline {11.4}Discrete-Time Signals}{74}{section.11.4}%
+\contentsline {mtocsection}{\numberline {11.4}Discrete-Time Signals}{74}{section.11.4}%
+\contentsline {subsection}{\numberline {11.4.1}The mathematics}{75}{subsection.11.4.1}%
+\contentsline {mtocsubsection}{\numberline {11.4.1}The mathematics}{75}{subsection.11.4.1}%
+\contentsline {subsection}{\numberline {11.4.2}Python discrete time example}{76}{subsection.11.4.2}%
+\contentsline {mtocsubsection}{\numberline {11.4.2}Python discrete time example}{76}{subsection.11.4.2}%
+\contentsline {subsection}{\numberline {11.4.3}Aliasing, bandwidth and sample rate theory}{78}{subsection.11.4.3}%
+\contentsline {mtocsubsection}{\numberline {11.4.3}Aliasing, bandwidth and sample rate theory}{78}{subsection.11.4.3}%
+\contentsline {subsection}{\numberline {11.4.4}Z-transform}{80}{subsection.11.4.4}%
+\contentsline {mtocsubsection}{\numberline {11.4.4}Z-transform}{80}{subsection.11.4.4}%
+\contentsline {subsection}{\numberline {11.4.5}Pole-Zero plots}{81}{subsection.11.4.5}%
+\contentsline {mtocsubsection}{\numberline {11.4.5}Pole-Zero plots}{81}{subsection.11.4.5}%
+\contentsline {subsection}{\numberline {11.4.6}Z-domain}{81}{subsection.11.4.6}%
+\contentsline {mtocsubsection}{\numberline {11.4.6}Z-domain}{81}{subsection.11.4.6}%
+\contentsline {subsection}{\numberline {11.4.7}First order filter}{82}{subsection.11.4.7}%
+\contentsline {mtocsubsection}{\numberline {11.4.7}First order filter}{82}{subsection.11.4.7}%
+\contentsline {subsection}{\numberline {11.4.8}Finite-impulse response(FIR)}{84}{subsection.11.4.8}%
+\contentsline {mtocsubsection}{\numberline {11.4.8}Finite-impulse response(FIR)}{84}{subsection.11.4.8}%
+\contentsline {section}{\numberline {11.5}Switched-Capacitor}{85}{section.11.5}%
+\contentsline {mtocsection}{\numberline {11.5}Switched-Capacitor}{85}{section.11.5}%
+\contentsline {subsection}{\numberline {11.5.1}Switched capacitor gain circuit}{87}{subsection.11.5.1}%
+\contentsline {mtocsubsection}{\numberline {11.5.1}Switched capacitor gain circuit}{87}{subsection.11.5.1}%
+\contentsline {subsection}{\numberline {11.5.2}Switched capacitor integrator}{88}{subsection.11.5.2}%
+\contentsline {mtocsubsection}{\numberline {11.5.2}Switched capacitor integrator}{88}{subsection.11.5.2}%
+\contentsline {subsection}{\numberline {11.5.3}Noise}{90}{subsection.11.5.3}%
+\contentsline {mtocsubsection}{\numberline {11.5.3}Noise}{90}{subsection.11.5.3}%
+\contentsline {subsection}{\numberline {11.5.4}Sub-circuits for SC-circuits}{91}{subsection.11.5.4}%
+\contentsline {mtocsubsection}{\numberline {11.5.4}Sub-circuits for SC-circuits}{91}{subsection.11.5.4}%
+\contentsline {subsubsection}{\numberline {11.5.4.1}OTA}{91}{subsubsection.11.5.4.1}%
+\contentsline {subsubsection}{\numberline {11.5.4.2}Switches}{92}{subsubsection.11.5.4.2}%
+\contentsline {subsubsection}{\numberline {11.5.4.3}Non-overlapping clocks}{95}{subsubsection.11.5.4.3}%
+\contentsline {subsection}{\numberline {11.5.5}Example}{95}{subsection.11.5.5}%
+\contentsline {mtocsubsection}{\numberline {11.5.5}Example}{95}{subsection.11.5.5}%
+\contentsline {section}{\numberline {11.6}Want to learn more?}{96}{section.11.6}%
+\contentsline {mtocsection}{\numberline {11.6}Want to learn more?}{96}{section.11.6}%
+\contentsline {chapter}{\numberline {12}Oversampling and Sigma-Delta ADCs}{97}{chapter.12}%
 \etoc@startlocaltoc {22}
 \etoc@startlocaltoc {23}
-\contentsline {chapter}{\numberline {13}Voltage Regulation}{67}{chapter.13}%
+\contentsline {section}{\numberline {12.1}ADC state-of-the-art}{97}{section.12.1}%
+\contentsline {mtocsection}{\numberline {12.1}ADC state-of-the-art}{97}{section.12.1}%
+\contentsline {subsection}{\numberline {12.1.1}What makes a state-of-the-art ADC}{98}{subsection.12.1.1}%
+\contentsline {mtocsubsection}{\numberline {12.1.1}What makes a state-of-the-art ADC}{98}{subsection.12.1.1}%
+\contentsline {subsection}{\numberline {12.1.2}High resolution FOM}{105}{subsection.12.1.2}%
+\contentsline {mtocsubsection}{\numberline {12.1.2}High resolution FOM}{105}{subsection.12.1.2}%
+\contentsline {section}{\numberline {12.2}Quantization}{106}{section.12.2}%
+\contentsline {mtocsection}{\numberline {12.2}Quantization}{106}{section.12.2}%
+\contentsline {subsection}{\numberline {12.2.1}Signal to Quantization noise ratio}{110}{subsection.12.2.1}%
+\contentsline {mtocsubsection}{\numberline {12.2.1}Signal to Quantization noise ratio}{110}{subsection.12.2.1}%
+\contentsline {subsection}{\numberline {12.2.2}Understanding quantization}{110}{subsection.12.2.2}%
+\contentsline {mtocsubsection}{\numberline {12.2.2}Understanding quantization}{110}{subsection.12.2.2}%
+\contentsline {subsection}{\numberline {12.2.3}Why you should care about quantization noise}{113}{subsection.12.2.3}%
+\contentsline {mtocsubsection}{\numberline {12.2.3}Why you should care about quantization noise}{113}{subsection.12.2.3}%
+\contentsline {section}{\numberline {12.3}Oversampling}{113}{section.12.3}%
+\contentsline {mtocsection}{\numberline {12.3}Oversampling}{113}{section.12.3}%
+\contentsline {subsection}{\numberline {12.3.1}Noise power}{114}{subsection.12.3.1}%
+\contentsline {mtocsubsection}{\numberline {12.3.1}Noise power}{114}{subsection.12.3.1}%
+\contentsline {subsection}{\numberline {12.3.2}Signal power}{115}{subsection.12.3.2}%
+\contentsline {mtocsubsection}{\numberline {12.3.2}Signal power}{115}{subsection.12.3.2}%
+\contentsline {subsection}{\numberline {12.3.3}Signal to Noise Ratio}{115}{subsection.12.3.3}%
+\contentsline {mtocsubsection}{\numberline {12.3.3}Signal to Noise Ratio}{115}{subsection.12.3.3}%
+\contentsline {subsection}{\numberline {12.3.4}Signal to Quantization Noise Ratio}{115}{subsection.12.3.4}%
+\contentsline {mtocsubsection}{\numberline {12.3.4}Signal to Quantization Noise Ratio}{115}{subsection.12.3.4}%
+\contentsline {subsection}{\numberline {12.3.5}Python oversample}{116}{subsection.12.3.5}%
+\contentsline {mtocsubsection}{\numberline {12.3.5}Python oversample}{116}{subsection.12.3.5}%
+\contentsline {section}{\numberline {12.4}Noise Shaping}{117}{section.12.4}%
+\contentsline {mtocsection}{\numberline {12.4}Noise Shaping}{117}{section.12.4}%
+\contentsline {subsection}{\numberline {12.4.1}The magic of feedback}{117}{subsection.12.4.1}%
+\contentsline {mtocsubsection}{\numberline {12.4.1}The magic of feedback}{117}{subsection.12.4.1}%
+\contentsline {subsection}{\numberline {12.4.2}Sigma-delta principle}{118}{subsection.12.4.2}%
+\contentsline {mtocsubsection}{\numberline {12.4.2}Sigma-delta principle}{118}{subsection.12.4.2}%
+\contentsline {subsubsection}{\numberline {12.4.2.1}The DAC assumption}{119}{subsubsection.12.4.2.1}%
+\contentsline {subsubsection}{\numberline {12.4.2.2}The ADC assumption}{119}{subsubsection.12.4.2.2}%
+\contentsline {subsubsection}{\numberline {12.4.2.3}The modified equation}{119}{subsubsection.12.4.2.3}%
+\contentsline {subsection}{\numberline {12.4.3}Signal transfer function}{120}{subsection.12.4.3}%
+\contentsline {mtocsubsection}{\numberline {12.4.3}Signal transfer function}{120}{subsection.12.4.3}%
+\contentsline {subsection}{\numberline {12.4.4}Noise transfer function}{121}{subsection.12.4.4}%
+\contentsline {mtocsubsection}{\numberline {12.4.4}Noise transfer function}{121}{subsection.12.4.4}%
+\contentsline {subsection}{\numberline {12.4.5}Combined transfer function}{121}{subsection.12.4.5}%
+\contentsline {mtocsubsection}{\numberline {12.4.5}Combined transfer function}{121}{subsection.12.4.5}%
+\contentsline {section}{\numberline {12.5}First-Order Noise-Shaping}{121}{section.12.5}%
+\contentsline {mtocsection}{\numberline {12.5}First-Order Noise-Shaping}{121}{section.12.5}%
+\contentsline {subsection}{\numberline {12.5.1}SQNR and ENOB}{123}{subsection.12.5.1}%
+\contentsline {mtocsubsection}{\numberline {12.5.1}SQNR and ENOB}{123}{subsection.12.5.1}%
+\contentsline {section}{\numberline {12.6}Examples}{124}{section.12.6}%
+\contentsline {mtocsection}{\numberline {12.6}Examples}{124}{section.12.6}%
+\contentsline {subsection}{\numberline {12.6.1}Python noise-shaping}{124}{subsection.12.6.1}%
+\contentsline {mtocsubsection}{\numberline {12.6.1}Python noise-shaping}{124}{subsection.12.6.1}%
+\contentsline {subsection}{\numberline {12.6.2}The wonderful world of SD modulators}{126}{subsection.12.6.2}%
+\contentsline {mtocsubsection}{\numberline {12.6.2}The wonderful world of SD modulators}{126}{subsection.12.6.2}%
+\contentsline {subsubsection}{\numberline {12.6.2.1}Open-Loop Sigma-Delta}{126}{subsubsection.12.6.2.1}%
+\contentsline {subsubsection}{\numberline {12.6.2.2}Noise Shaped SAR}{127}{subsubsection.12.6.2.2}%
+\contentsline {subsubsection}{\numberline {12.6.2.3}Control-Bounded ADCs}{128}{subsubsection.12.6.2.3}%
+\contentsline {subsubsection}{\numberline {12.6.2.4}Complex Sigma-Delta}{129}{subsubsection.12.6.2.4}%
+\contentsline {subsubsection}{\numberline {12.6.2.5}My first Sigma-Delta}{130}{subsubsection.12.6.2.5}%
+\contentsline {section}{\numberline {12.7}Want to learn more?}{131}{section.12.7}%
+\contentsline {mtocsection}{\numberline {12.7}Want to learn more?}{131}{section.12.7}%
+\contentsline {chapter}{\numberline {13}Voltage Regulation}{133}{chapter.13}%
 \etoc@startlocaltoc {24}
 \etoc@startlocaltoc {25}
-\contentsline {chapter}{\numberline {14}Clocks and PLLs}{69}{chapter.14}%
+\contentsline {section}{\numberline {13.1}Voltage source}{133}{section.13.1}%
+\contentsline {mtocsection}{\numberline {13.1}Voltage source}{133}{section.13.1}%
+\contentsline {subsubsection}{\numberline {13.1.0.1}Why transistors die}{135}{subsubsection.13.1.0.1}%
+\contentsline {subsection}{\numberline {13.1.1}Core voltage}{137}{subsection.13.1.1}%
+\contentsline {mtocsubsection}{\numberline {13.1.1}Core voltage}{137}{subsection.13.1.1}%
+\contentsline {subsection}{\numberline {13.1.2}IO voltage}{138}{subsection.13.1.2}%
+\contentsline {mtocsubsection}{\numberline {13.1.2}IO voltage}{138}{subsection.13.1.2}%
+\contentsline {subsection}{\numberline {13.1.3}Supply planning}{138}{subsection.13.1.3}%
+\contentsline {mtocsubsection}{\numberline {13.1.3}Supply planning}{138}{subsection.13.1.3}%
+\contentsline {section}{\numberline {13.2}Linear Regulators}{139}{section.13.2}%
+\contentsline {mtocsection}{\numberline {13.2}Linear Regulators}{139}{section.13.2}%
+\contentsline {subsection}{\numberline {13.2.1}PMOS pass-fet}{139}{subsection.13.2.1}%
+\contentsline {mtocsubsection}{\numberline {13.2.1}PMOS pass-fet}{139}{subsection.13.2.1}%
+\contentsline {subsection}{\numberline {13.2.2}NMOS pass-fet}{141}{subsection.13.2.2}%
+\contentsline {mtocsubsection}{\numberline {13.2.2}NMOS pass-fet}{141}{subsection.13.2.2}%
+\contentsline {subsection}{\numberline {13.2.3}Control of pass-fet}{141}{subsection.13.2.3}%
+\contentsline {mtocsubsection}{\numberline {13.2.3}Control of pass-fet}{141}{subsection.13.2.3}%
+\contentsline {section}{\numberline {13.3}Switched Regulators}{143}{section.13.3}%
+\contentsline {mtocsection}{\numberline {13.3}Switched Regulators}{143}{section.13.3}%
+\contentsline {subsection}{\numberline {13.3.1}Principles of switched regulators}{144}{subsection.13.3.1}%
+\contentsline {mtocsubsection}{\numberline {13.3.1}Principles of switched regulators}{144}{subsection.13.3.1}%
+\contentsline {subsubsection}{\numberline {13.3.1.1}Inductive BUCK DC/DC}{144}{subsubsection.13.3.1.1}%
+\contentsline {subsubsection}{\numberline {13.3.1.2}Capacitive BUCK DC/DC}{145}{subsubsection.13.3.1.2}%
+\contentsline {subsubsection}{\numberline {13.3.1.3}Inductive BOOST DC/DC}{146}{subsubsection.13.3.1.3}%
+\contentsline {subsubsection}{\numberline {13.3.1.4}Capacitive BOOST DC/DC}{146}{subsubsection.13.3.1.4}%
+\contentsline {subsection}{\numberline {13.3.2}Inductive DC/DC converter details}{147}{subsection.13.3.2}%
+\contentsline {mtocsubsection}{\numberline {13.3.2}Inductive DC/DC converter details}{147}{subsection.13.3.2}%
+\contentsline {subsection}{\numberline {13.3.3}Pulse width modulation (PWM)}{148}{subsection.13.3.3}%
+\contentsline {mtocsubsection}{\numberline {13.3.3}Pulse width modulation (PWM)}{148}{subsection.13.3.3}%
+\contentsline {subsection}{\numberline {13.3.4}Real world use}{150}{subsection.13.3.4}%
+\contentsline {mtocsubsection}{\numberline {13.3.4}Real world use}{150}{subsection.13.3.4}%
+\contentsline {subsection}{\numberline {13.3.5}Pulsed Frequency Mode (PFM)}{151}{subsection.13.3.5}%
+\contentsline {mtocsubsection}{\numberline {13.3.5}Pulsed Frequency Mode (PFM)}{151}{subsection.13.3.5}%
+\contentsline {section}{\numberline {13.4}Want to learn more?}{154}{section.13.4}%
+\contentsline {mtocsection}{\numberline {13.4}Want to learn more?}{154}{section.13.4}%
+\contentsline {subsection}{\numberline {13.4.1}Linear regulators}{154}{subsection.13.4.1}%
+\contentsline {mtocsubsection}{\numberline {13.4.1}Linear regulators}{154}{subsection.13.4.1}%
+\contentsline {subsection}{\numberline {13.4.2}DC-DC converters}{154}{subsection.13.4.2}%
+\contentsline {mtocsubsection}{\numberline {13.4.2}DC-DC converters}{154}{subsection.13.4.2}%
+\contentsline {chapter}{\numberline {14}Clocks and PLLs}{155}{chapter.14}%
 \etoc@startlocaltoc {26}
 \etoc@startlocaltoc {27}
-\contentsline {chapter}{\numberline {15}Oscillators}{71}{chapter.15}%
+\contentsline {chapter}{\numberline {15}Oscillators}{157}{chapter.15}%
 \etoc@startlocaltoc {28}
 \etoc@startlocaltoc {29}
-\contentsline {chapter}{\numberline {16}Low Power Radio}{73}{chapter.16}%
+\contentsline {chapter}{\numberline {16}Low Power Radio}{159}{chapter.16}%
 \etoc@startlocaltoc {30}
 \etoc@startlocaltoc {31}
-\contentsline {chapter}{\numberline {17}Analog SystemVerilog}{75}{chapter.17}%
+\contentsline {chapter}{\numberline {17}Analog SystemVerilog}{161}{chapter.17}%
 \etoc@startlocaltoc {32}
 \etoc@startlocaltoc {33}
-\contentsline {chapter}{\numberline {18}Energy Sources}{77}{chapter.18}%
+\contentsline {chapter}{\numberline {18}Energy Sources}{163}{chapter.18}%
 \etoc@startlocaltoc {34}
 \etoc@startlocaltoc {35}
