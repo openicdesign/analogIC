@@ -26,6 +26,15 @@ description: >- # this means to ignore newlines until "baseurl:"
 domain: "openicdesign.github.io"
 baseurl: "/analogIC" # the subpath of your site, e.g. /blog
 url: "https://openicdesign.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+nav:
+  - title: Home
+    url: /
+  - title: Plan
+    url: /plan/
+  - title: Syllabus
+    url: /syllabus/
+  - title: About
+    url: /about/
 
 
 # Build settings

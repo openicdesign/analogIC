@@ -4,14 +4,21 @@ title: About
 permalink: /about/
 ---
 
-My name is Carsten Wulff and I'm an analog integrated circuit designer,
-programmer and educator.
 
-I have three axis in relation to analog integrated circuit design:
+analogIC is my public notebook: every lecture lands in markdown, the toolchain
+stays open, and everything is bundled into one
+[book]({{ '/assets/analogic.pdf' | relative_url }}) for students, hobbyists, and
+engineers who want to follow along.
 
-- I work at [Nordic Semiconductor](https://www.nordicsemi.com) as the IC Scientist.
-- I work at [NTNU](https://ntnu.no) where I teach [Advanced Integrated
-  Circuits](https://www.ntnu.edu/studies/courses/TFE4188#tab=omEmnet)
-- I have a hobby trying to figure out how to make a new analog circuit design
-  paradigm. The one we have today with
-  schematic/simulation/layout/verification/simulation is too slow
+The project now sits under [AI-Silicon](https://aisi.asicedu.com), where I test
+AI copilots, reproducible scripts, and open-source tools for real analog flows.
+Here you will find:
+
+- concise lecture notes and workshop slides,
+- reproducible SPICE and Python projects,
+- links to the public repos, datasets, and experiments that document what I am
+  building.
+
+If that mix of teaching, tooling, and open-source work resonates with you,
+reach out and help push analog design toward more transparent, collaborative
+practices.
