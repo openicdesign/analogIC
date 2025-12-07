@@ -48,7 +48,7 @@ kramdown:
   mathjax: true
 
 
-remote_theme: analogIC/minima
+remote_theme: wulffern/minima
 plugins:
   - jekyll-feed
   - jemoji
