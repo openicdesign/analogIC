@@ -1,0 +1,3 @@
+[submodule "pdf/kaobook"]
+	path = pdf/kaobook
+	url = https://github.com/fmarotta/kaobook.git
