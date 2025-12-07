@@ -10,6 +10,29 @@ import urllib.request
 import subprocess
 import tempfile
 
+USER_AGENT = "analogic-bot/1.0 (+https://github.com/openicdesign/analogIC)"
+
+
+def _download_remote_asset(url):
+    """
+    Download a remote asset into the OS temp directory and return the local path.
+    """
+    tmp_dir = tempfile.gettempdir()
+    os.makedirs(tmp_dir, exist_ok=True)
+    parsed = urllib.parse.urlparse(url)
+    local_name = urllib.parse.unquote(os.path.basename(parsed.path)) or "downloaded_asset"
+    local_path = os.path.join(tmp_dir, local_name)
+    if os.path.exists(local_path):
+        return local_path
+    req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+    try:
+        with urllib.request.urlopen(req) as response, open(local_path, "wb") as outf:
+            shutil.copyfileobj(response, outf)
+    except Exception as exc:
+        raise RuntimeError(f"Unable to download image {url}") from exc
+    return local_path
+
+
 class Image():
 
     def __init__(self,imgsrc,options):
@@ -37,21 +60,7 @@ class Image():
             self.src = svg
 
         if(self.isUrl and "downloadImage" in self.options):
-            url = self.src
-            tmp_dir = tempfile.gettempdir()
-            os.makedirs(tmp_dir, exist_ok=True)
-            local_name = urllib.parse.unquote(os.path.basename(self.src))
-            self.src = os.path.join(tmp_dir, local_name)
-            if(not os.path.exists(self.src)):
-                try:
-                    req = urllib.request.Request(
-                        url,
-                        headers={"User-Agent": "analogic-bot/1.0 (+https://github.com/openicdesign/analogIC)"},
-                    )
-                    with urllib.request.urlopen(req) as response, open(self.src, "wb") as outf:
-                        shutil.copyfileobj(response, outf)
-                except Exception as exc:
-                    raise RuntimeError(f"Unable to download image {url}") from exc
+            self.src = _download_remote_asset(self.src)
 
 
         self.filesrc = os.path.basename(self.src)
