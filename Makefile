@@ -5,10 +5,19 @@ TAG=1
 YEAR=2025
 
 #-
-PYTHON := $(shell if [ -x venv/bin/python ]; then printf "venv/bin/python"; \
-	elif command -v python3 >/dev/null 2>&1; then command -v python3; \
+ifeq ($(OS),Windows_NT)
+  VENV_PY := .\venv/Scripts/python.exe
+else
+  VENV_PY := venv/bin/python
+endif
+
+ifneq ($(wildcard $(VENV_PY)),)
+  PYTHON := $(VENV_PY)
+else
+  PYTHON := $(shell if command -v python3 >/dev/null 2>&1; then command -v python3; \
 	elif command -v python >/dev/null 2>&1; then command -v python; \
 	else printf "python3"; fi)
+endif
 PANDOC_BIN ?= pandoc
 export PANDOC_BIN
 
@@ -18,7 +27,7 @@ FILES = l00_diode \
 	l00_refresher \
 	lp_project_report \
 	l01_intro \
-	#l02_esd \
+	l02_esd \
 	l03_refbias \
 	l04_afe \
 	l05_sc \

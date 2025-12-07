@@ -59,8 +59,15 @@ class Image():
                 os.system(cmd)
             self.src = svg
 
-        if(self.isUrl and "downloadImage" in self.options):
-            self.src = _download_remote_asset(self.src)
+        if self.isUrl and "downloadImage" in self.options:
+            try:
+                self.src = _download_remote_asset(self.src)
+            except RuntimeError as exc:
+                print(f"{exc}. Marking image for manual follow-up.")
+                self.skip = True
+                self.skip_reason = str(exc)
+                self.caption = options.get("caption", imgsrc)
+                return
 
 
         self.filesrc = os.path.basename(self.src)
@@ -84,8 +91,9 @@ class Image():
                 print(e)
     def __str__(self):
 
-        if(self.skip):
-            return f"> image {self.src} removed"
+        if self.skip:
+            reason = getattr(self, "skip_reason", "image skipped")
+            return f"> WARNING: image '{self.orgsrc}' not included ({reason})\n"
 
         if("jekyll" in self.options):
             path = self.options["jekyll"] + "assets/media/" + self.filesrc
